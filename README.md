@@ -8,17 +8,26 @@ A kernel module which calls a hook function on intercepted IP/TCP Packets which 
 ####Usage:
 
 `make` - to compile the program
+
 `sudo insmod hello.ko` - to load the module into the kernel
+
 Run nmap scans
+
 `dmesg` - to see kernel logs
+
 `sudo rmmod hello` - to unload the module
+
 
 ####nmap scans supported:
 
 `sudo nmap -sX localhost` - Xmas Scan - URG, PSH, FIN flags set
+
 `sudo nmap -sS localhost` - SYN Scan - SYN flag set
+
 `sudo nmap -sF localhost` - FIN Scan - FIN flag set
+
 `sudo nmap -sN localhost` - NULL Scan - No flags set
+
 
 ----
 References:
